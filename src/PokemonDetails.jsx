@@ -63,7 +63,7 @@ const PokemonDetails = ({ pokemon }) => {
   const glowGradient = getGlowGradient(pokemon.types);
 
   return (
-    <div className="bg-white rounded-3xl shadow-lg p-6 mt-[-15px] ml-[30px] w-full sm:w-[540px] md:w-[500px] max-w-lg mx-auto flex flex-col items-center relative overflow-hidden">
+    <div className="bg-white rounded-3xl shadow-lg p-6 mt-[-15px] ml-[30px] sm:w-full lg:w-[500px] h-[600px] max-w-lg mx-auto flex flex-col items-center relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-red-200 to-white opacity-20 rounded-3xl"></div>
 
       <div className="z-10 flex flex-col items-center mb-4 relative">
@@ -102,7 +102,7 @@ const PokemonDetails = ({ pokemon }) => {
         </div>
       </div>
 
-      <div className="w-full overflow-y-auto z-10 mt-4">
+      <div className="w-full overflow-y-auto z-10 mt-4 flex-grow">
         <PokemonAttributes pokemon={pokemon} />
       </div>
     </div>
