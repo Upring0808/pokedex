@@ -67,7 +67,6 @@ const PokemonDetails = ({ pokemon }) => {
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-red-200 to-white opacity-20 rounded-3xl"></div>
 
       <div className="z-10 flex flex-col items-center mb-4 relative">
-        {/* Glow effect */}
         <div
           className="absolute inset-0 z-0 blur-3xl"
           style={{

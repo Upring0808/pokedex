@@ -8,7 +8,6 @@ const SearchBar = ({ onSearchChange }) => {
   return (
     <div className="w-full flex justify-center mb-6">
       <div className="relative w-full max-w-md">
-        {/* Poké Ball inspired circle on the left */}
         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
           <div className="w-5 h-5 bg-gradient-to-b from-white to-gray-200 rounded-full border-2 border-gray-400"></div>
         </div>
@@ -20,7 +19,6 @@ const SearchBar = ({ onSearchChange }) => {
           className="w-full pl-10 pr-4 py-3 rounded-full bg-gradient-to-br from-white to-blue-50 border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 shadow-sm transition-shadow duration-200"
         />
 
-        {/* Poké Ball button on the right */}
         <div className="absolute inset-y-0 right-0 flex items-center pr-3">
           <button
             type="button"

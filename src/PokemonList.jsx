@@ -12,11 +12,11 @@ const PokemonList = ({ pokemonList, onPokemonSelect }) => {
   }, [pokemonList]);
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-6 overflow-y-auto h-[670px] sm:h-[450px] bg-gradient-to-b from-gray-50 to-blue-50 rounded-lg shadow-xl">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-6 overflow-y-auto h-[670px] sm:h-[450px] bg-gradient-to-b from-yellow-200 to-blue-100 rounded-lg shadow-xl">
       {pokemonData.map((pokemon) => (
         <div
           key={pokemon.name}
-          className="pokemon-card bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 h-38 w-38 cursor-pointer transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-tr hover:from-blue-100 hover:to-white relative border-2 border-blue-100 hover:border-blue-300 group"
+          className="pokemon-card bg-gradient-to-br from-blue-100 to-white rounded-xl shadow-lg flex flex-col items-center justify-center p-3 h-38 w-38 cursor-pointer transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-tr hover:from-blue-100 hover:to-white relative border-2 border-yellow-300 hover:border-yellow-00 group"
           onClick={() => onPokemonSelect(pokemon)}
         >
           <div className="relative w-24 h-24 mb-3 flex-shrink-0">
