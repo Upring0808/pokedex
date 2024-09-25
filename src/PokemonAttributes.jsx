@@ -78,11 +78,11 @@ const PokemonAttributes = ({ pokemon }) => {
         color="text-yellow-500"
       />
       <AttributeItem
-        icon={Shield} // Change to Shield icon
-        label="Defense" // Change the label to Defense
+        icon={Shield}
+        label="Defense"
         value={
           pokemon.stats.find((stat) => stat.stat.name === "defense").base_stat
-        } // Find the defense stat value
+        }
         color="text-red-500"
       />
 
@@ -116,10 +116,10 @@ const PokemonAttributes = ({ pokemon }) => {
   );
 
   const StatsTab = () => (
-    <div className="grid grid-cols-1 gap-1 p-1 w-[285px] lg:w-[500px]">
+    <div className="grid grid-cols-1 gap-1 p-1">
       {pokemon.stats.map((stat, idx) => (
         <div key={idx} className="bg-gray-50 p-1 rounded-lg">
-          <div className="flex items-center justify-between mb-1 w-full lg:w-[430px]">
+          <div className="flex items-center justify-between mb-1">
             <span className="text-xs font-medium text-gray-700 capitalize">
               {stat.stat.name}
             </span>
@@ -127,7 +127,7 @@ const PokemonAttributes = ({ pokemon }) => {
               {stat.base_stat}/255
             </span>
           </div>
-          <div className="bg-gray-200 rounded-full h-2 w-full lg:w-[430px]">
+          <div className="bg-gray-200 rounded-full h-2 w-full">
             <div
               className="bg-orange-600 h-2 rounded-full"
               style={{ width: `${(stat.base_stat / 255) * 100}%` }}
@@ -139,7 +139,7 @@ const PokemonAttributes = ({ pokemon }) => {
   );
 
   return (
-    <div className="w-full  bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200">
+    <div className="w-[285px] lg:w-[450px] bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200">
       <div className="bg-gray-100 px-2 py-1 border-b border-gray-200">
         <nav className="flex" aria-label="Tabs">
           <TabButton name="info" label="Info" icon={ChevronRight} />
